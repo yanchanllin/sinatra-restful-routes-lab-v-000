@@ -4,8 +4,8 @@
     <form method='POST' action='/recipes/<%= @recipe.id %>'>
       <input id="hidden" type="hidden" name="_method" value="patch">
       <h4>Name: <%= @recipe.name %></h4>
-      <label for "name">Edit:</label>
-      <input type="text" id="recipe_name" name="name">
+      <label for "recipe_name">Edit:</label>
+      <input type="text" id="recipe_name" name="recipe_name">
       <h4>Ingredients: <%= @recipe.ingredients %></h4>
       <label for "ingredients">Edit:</label>
       <input type="text" id="ingredients" name="ingredients">
